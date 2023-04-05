@@ -2,11 +2,7 @@
 
 Write colored text to the terminal easily.
 
-<center>
-
 ![Color palette](colors.png)
-
-</center>
 
 ## Installation
 
