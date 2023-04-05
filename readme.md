@@ -63,3 +63,7 @@ echo $(gray "[INFO] " && green "This is green test")
 - `UNDERLINE` - for underline
 - `BLINK` - for blink
 - `NC` - for no colors (reset)
+
+## License
+
+MIT
