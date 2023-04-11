@@ -13,7 +13,7 @@ function light_yellow() { printf "\e[1;93m%s\e[m" "$@"; }
 function green() { printf "\e[1;32m%s\e[m" "$@"; }
 function light_green() { printf "\e[1;92m%s\e[m" "$@"; }
 function red() { printf "\e[1;31m%s\e[m" "$@"; }
-function ligt_red() { printf "\e[1;91m%s\e[m" "$@"; }
+function light_red() { printf "\e[1;91m%s\e[m" "$@"; }
 function blue() { printf "\e[1;34m%s\e[m" "$@"; }
 function light_blue() { printf "\e[1;94m%s\e[m" "$@"; }
 function magenta() { printf "\e[1;35m%s\e[m" "$@"; }
