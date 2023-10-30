@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 source colors.sh
 
 # with colors.sh sourced, you can use the constants
