@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script is used to define colors for bash scripts
 # GitHub: https://github.com/OzzyCzech/colors.sh
