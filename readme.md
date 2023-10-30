@@ -37,9 +37,6 @@ echo $(gray "[INFO] " && green "This is green test")
 - `cyan` - for cyan
 - `white` - for white
 - `black` - for black
-- `bold` - for bold
-- `underline` - for underline
-- `blink` - for blink text
 - `nc` - for no colors (reset)
 
 ## Contants

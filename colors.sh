@@ -5,30 +5,9 @@
 # Author: Roman Ožana <roman@ozana.cz>
 # License: MIT
 
-# Define Functions
-function gray() { printf "\e[1;90m%s\e[m" "$@"; }
-function light_gray() { printf "\e[1;90m%s\e[m" "$@"; }
-function yellow() { printf "\e[1;33m%s\e[m" "$@"; }
-function light_yellow() { printf "\e[1;93m%s\e[m" "$@"; }
-function green() { printf "\e[1;32m%s\e[m" "$@"; }
-function light_green() { printf "\e[1;92m%s\e[m" "$@"; }
-function red() { printf "\e[1;31m%s\e[m" "$@"; }
-function light_red() { printf "\e[1;91m%s\e[m" "$@"; }
-function blue() { printf "\e[1;34m%s\e[m" "$@"; }
-function light_blue() { printf "\e[1;94m%s\e[m" "$@"; }
-function magenta() { printf "\e[1;35m%s\e[m" "$@"; }
-function light_magenta() { printf "\e[1;95m%s\e[m" "$@"; }
-function cyan() { printf "\e[1;36m%s\e[m" "$@"; }
-function white() { printf "\e[1;37m%s\e[m" "$@"; }
-function black() { printf "\e[1;30m%s\e[m" "$@"; }
-function bold() { printf "\e[1m%s\e[m" "$@"; }
-function underline() { printf "\e[4m%s\e[m" "$@"; }
-function blink() { printf "\e[5m%s\e[m" "$@"; }
-function nc() { printf "\e[0m%s\e[m" "$@"; } # no color
-
 # Define Colors
-GRAY='\033[0;37m'
-LIGHT_GRAY='\033[0;37m'
+GRAY='\033[0;90m'
+LIGHT_GRAY='\033[0;90m'
 YELLOW='\033[0;33m'
 LIGHT_YELLOW='\033[0;93m'
 GREEN='\033[0;32m'
@@ -42,7 +21,27 @@ LIGHT_MAGENTA='\033[0;95m'
 CYAN='\033[0;36m'
 WHITE='\033[0;37m'
 BLACK='\033[0;30m'
+
+# Styles
+
 BOLD='\033[1m'
 UNDERLINE='\033[4m'
 BLINK='\033[5m'
 NC='\033[0m' # no Color
+
+# Define Functions
+function gray() { printf "${GRAY}%s${NC}" "$@"; }
+function light_gray() { printf "${LIGHT_GRAY}%s${NC}" "$@"; }
+function yellow() { printf "${YELLOW}%s${NC}" "$@"; }
+function light_yellow() { printf "${LIGHT_YELLOW}%s${NC}" "$@"; }
+function green() { printf "${GREEN}%s${NC}" "$@"; }
+function light_green() { printf "${LIGHT_GREEN}%s${NC}" "$@"; }
+function red() { printf "${RED}%s${NC}" "$@"; }
+function light_red() { printf "${LIGHT_RED}%s${NC}" "$@"; }
+function blue() { printf "${BLUE}%s${NC}" "$@"; }
+function light_blue() { printf "${LIGHT_BLUE}%s${NC}" "$@"; }
+function magenta() { printf "${MAGENTA}%s${NC}" "$@"; }
+function light_magenta() { printf "${LIGHT_MAGENTA}%s${NC}" "$@"; }
+function cyan() { printf "${CYAN}%s${NC}" "$@"; }
+function white() { printf "${WHITE}%s${NC}" "$@"; }
+function black() { printf "${BLACK}%s${NC}" "$@"; }
