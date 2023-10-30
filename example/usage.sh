@@ -6,15 +6,11 @@ source colors.sh
 echo "${RED}This is red text${NC} and this is ${GREEN}green ${BLINK}blink${NC} text${NC}"
 echo "this is ${MAGENTA}magenta ${BLINK}blink${NC} text${NC}"
 
-# or you can use the functions
-echo $(gray "[INFO] " && green "This is green test")
-
 # there can be a function that uses the colors
-function info() { echo $(gray "[INFO] " && yellow "$@"); }
+function info() { printf "${YELLOW}$@${NC}\n"; }
 info "This is a info test"
 
 # or you can use the functions directly
-
 printf "${GRAY}GRAY${NC}\n"
 printf "${LIGHT_GRAY}LIGHT_GRAY${NC}\n"
 printf "${YELLOW}YELLOW${NC}\n"

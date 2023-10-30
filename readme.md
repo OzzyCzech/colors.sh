@@ -8,36 +8,18 @@ Write colored text to the terminal easily.
 
 Download `colors.sh` and source it in your script or copy/paste the functions and variables into your script.
 
+```shell
+curl -O https://raw.githubusercontent.com/OzzyCzech/colors.sh/master/colors.sh
+```
+
 ## Usage
 
-```sh
+```shell
 source colors.sh
 
 # with colors.sh sourced, you can use the constants
-echo "${RED}This is red text${NC}"
-
-# or you can use the functions
-echo $(gray "[INFO] " && green "This is green test")
+echo "This is ${RED}red text${NC}"
 ```
-
-## Functions
-
-- `gray` - for gray
-- `light_gray` - for light gray
-- `yellow` - for yellow
-- `light_yellow` - for light yellow
-- `green` - for green
-- `light_green` - for light green
-- `red` - for red
-- `ligt_red` - for ligt red
-- `blue` - for blue
-- `light_blue` - for light blue
-- `magenta` - for magenta
-- `light_magenta` - for light magenta
-- `cyan` - for cyan
-- `white` - for white
-- `black` - for black
-- `nc` - for no colors (reset)
 
 ## Contants
 
