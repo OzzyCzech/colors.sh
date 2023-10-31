@@ -9,6 +9,7 @@ function info() { printf "${MAGENTA}$@${NC}\n"; }
 function warn() { printf "${BOLD_YELLOW}$@${NC}\n"; }
 function error() { printf "${BOLD_RED}$@${NC}\n"; }
 function debug() { printf "${BOLD_GRAY}$@${NC}\n"; }
+function success() { printf "${BOLD_GREEN}$@${NC}\n"; }
 
 info "This is a info test"
 warn "This is a warn test"
@@ -35,3 +36,14 @@ echo "--------------------------------------------------------------------------
 # with colors.sh sourced, you can use the constants
 echo "${RED}This is red text${NC} and this is ${GREEN}green ${BLINK}blink${NC} text${NC}"
 echo "this is ${MAGENTA}magenta ${BLINK}blink${NC} text${NC}"
+
+
+echo "-----------------------------------------------------------------------------"
+
+# Add color to the output of a command
+{
+  echo "This is super text"
+  echo "Every line will be prefixed with hostname and script name"
+  printf "${GREEN}This is green text${NC}\n"
+  printf "${RED}This is red text${NC}\n"
+} | awk '{printf "'${GRAY}[${HOSTNAME}'] ['$(basename "$0")']'${NC}' %s\n", $0; fflush(stdout)}'
