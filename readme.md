@@ -21,28 +21,6 @@ source colors.sh
 echo "This is ${RED}red text${NC}"
 ```
 
-## Contants
-
-- `GRAY` - for gray
-- `LIGHT_GRAY` - for light_gray
-- `YELLOW` - for yellow
-- `LIGHT_YELLOW` - for light yellow
-- `GREEN` - for green
-- `LIGHT_GREEN` - for light green
-- `RED` - for red
-- `LIGHT_RED` - for light red
-- `BLUE` - for blue
-- `LIGHT_BLUE` - for light blue
-- `MAGENTA` - for magenta
-- `LIGHT_MAGENTA` - for light magenta
-- `CYAN` - for cyan
-- `WHITE` - for white
-- `BLACK` - for black
-- `BOLD` - for bold
-- `UNDERLINE` - for underline
-- `BLINK` - for blink
-- `NC` - for no colors (reset)
-
 ## License
 
 MIT
